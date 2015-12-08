@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menuwindow.MenuControllers">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="250.0" layoutY="286.0" spacing="10.0">
+         <children>
+            <Button fx:id="newGameButton" mnemonicParsing="false" onAction="#newGameClicked" text="New Game" />
+            <Button fx:id="settingsButton" mnemonicParsing="false" text="Settings" />
+            <Button fx:id="exitButton" layoutX="10.0" layoutY="35.0" mnemonicParsing="false" text="Exit" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@monopoly_cover.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D width="200.0" />
+         </viewport>
+      </ImageView>
+   </children>
+</Pane>
